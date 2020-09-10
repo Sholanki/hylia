@@ -31,25 +31,7 @@ function expose(name, fn) {
 	  tweet_(anchor.getAttribute("href"));
 	}
 	expose("tweet", tweet);
-	
-	const exposed = {};
-if (location.search) {
-  var a = document.createElement("a");
-  a.href = location.href;
-  a.search = "";
-  history.replaceState(null, null, a.href);
-}
 
-function tweet_(url) {
-  open(
-    "https://twitter.com/intent/tweet?url=" + encodeURIComponent(url),
-    "_blank"
-  );
-}
-function tweet(anchor) {
-  tweet_(anchor.getAttribute("href"));
-}
-expose("tweet", tweet);
 
 function share(anchor) {
   var url = anchor.getAttribute("href");
