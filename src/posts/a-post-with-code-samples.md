@@ -65,8 +65,12 @@ Hopefully this short and sweet trick will help you out on your projects. If it d
 
 ## Comments
 
-<button href="https://trusting-curran-0186ea.netlify.app/posts/a-simple-post/" on-click="tweet" id="addComment">Add a comment</button>
+<button href="https://trusting-curran-0186ea.netlify.app/posts/a-post-with-code-samples/" on-click="tweet" id="addComment">Add a comment</button>
 <script>
+	const exposed = {};
+	function expose(name, fn) {
+  exposed[name] = fn;
+}
     function tweet_(url) {
 	  open(
 		"https://twitter.com/intent/tweet?url=" + encodeURIComponent(url),
