@@ -15,5 +15,10 @@
       "url": "/contact",
       "external": false
     }
+	{
+      "text": "Posts",
+      "url": "/posts",
+      "external": false
+    }
   ]
 }
