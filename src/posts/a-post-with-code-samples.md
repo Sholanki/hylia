@@ -62,3 +62,19 @@ Finally, we use CSS transforms to `translateX(-50%)`. Because the transform work
 ## Wrapping up
 
 Hopefully this short and sweet trick will help you out on your projects. If it does, [drop me a tweet](https://twitter.com/andybelldesign), because I’d love to see it!
+
+## Comments
+
+<button href="https://trusting-curran-0186ea.netlify.app/posts/a-simple-post/" on-click="tweet" id="addComment">Add a comment</button>
+<script>
+    function tweet_(url) {
+	  open(
+		"https://twitter.com/intent/tweet?url=" + encodeURIComponent(url),
+		"_blank"
+	  );
+	}
+	function tweet(anchor) {
+	  tweet_(anchor.getAttribute("href"));
+	}
+	expose("tweet", tweet);
+  </script>
