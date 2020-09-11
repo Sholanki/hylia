@@ -12,7 +12,8 @@
   {% set paginationNextText = archiveButtonText %}
   {% set paginationNextUrl = '/archive' %}
 {% endif %}
-
+<body>
+<script src="/js/components/tweet.js" ></script>
 {% block content %}
   <main id="main-content" tabindex="-1">
     {% include "partials/components/intro.njk" %}
@@ -20,5 +21,6 @@
     {% include "partials/components/pagination.njk" %}
   </main>
 {% endblock %}
+</body>
 
 {{ content | safe }}
