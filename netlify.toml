@@ -1,3 +1,9 @@
 [build]
   command = "npm run production"
-  publish = "dist"
+  publish = "posts"
+  
+[[redirects]]
+  from = "https://trusting-curran-0186ea.netlify.app/posts/a-simple-post/	"
+  to = "https://trusting-curran-0186ea.netlify.app/a-simple-post/"
+  status = 200
+  force = true
