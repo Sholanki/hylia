@@ -18,20 +18,16 @@ if (location.search) {
   history.replaceState(null, null, a.href);
 }
 
-function expose(name, fn) {
-  exposed[name] = fn;
+function tweet_(url) {
+  open(
+    "https://twitter.com/intent/tweet?url=" + encodeURIComponent(url),
+    "_blank"
+  );
 }
-    function tweet_(url) {
-	  open(
-		"https://twitter.com/intent/tweet?url=" + encodeURIComponent(url),
-		"_blank"
-	  );
-	}
-	function tweet(anchor) {
-	  tweet_(anchor.getAttribute("href"));
-	}
-	expose("tweet", tweet);
-
+function tweet(anchor) {
+  tweet_(anchor.getAttribute("href"));
+}
+expose("tweet", tweet);
 
 function share(anchor) {
   var url = anchor.getAttribute("href");
@@ -184,7 +180,9 @@ if (window.ResizeObserver && document.querySelector("header nav #nav")) {
   }).observe(document.body);
 }
 
-
+function expose(name, fn) {
+  exposed[name] = fn;
+}
 
 addEventListener("click", (e) => {
   const handler = e.target.closest("[on-click]");
@@ -216,4 +214,3 @@ document.body.addEventListener(
   },
   /* capture */ "true"
 );
-
