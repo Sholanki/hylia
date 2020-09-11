@@ -10,7 +10,8 @@
   <span>— {{ helpers.getReadingTime(content) }} minute read</span>
 </p>
 {% endset %}
-
+<body>
+<script src="/js/components/tweet.js" ></script>
 {% block content %}
   <main id="main-content" tabindex="-1">
     <article class="[ post ] [ h-entry ]">
@@ -42,6 +43,7 @@
       {% endif %}
     </article>
   </main>
+ </body>
 {% endblock %}
 
 {{ content | safe }}
