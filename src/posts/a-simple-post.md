@@ -25,4 +25,10 @@ How about an ordered list of stuff:
 3. Sed posuere consectetur est at lobortis
 
 
+
+
 Hopefully, this has demonstrated how simple it is to make a nice looking blog with Hylia.
+
+## Comments
+
+<button href="https://trusting-curran-0186ea.netlify.app/posts/a-simple-post/" on-click="tweet" id="addComment">Add a comment</button>

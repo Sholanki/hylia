@@ -23,3 +23,7 @@ Finally, how about a `<blockquote>`?
 ![Person holds up a photograph of a riverside and buildings with the same river as a backdrop](/images/demo-image-2.jpg "Remember, if you want a figure and caption, add a 'title' attribute to image in the body field — Photo by Kharytonova Antonina on Unsplash.")
 
 Hopefully, this has demonstrated how simple it is to make a nice looking blog with Hylia.
+
+## Comments
+
+<button href="https://trusting-curran-0186ea.netlify.app/posts/a-post-with-figures-and-video/" on-click="tweet" id="addComment">Add a comment</button>
