@@ -65,4 +65,4 @@ Hopefully this short and sweet trick will help you out on your projects. If it d
 
 ## Comments
 
-<button class="button" href="https://trusting-curran-0186ea.netlify.app/posts/a-post-with-code-samples/" on-click="tweet" id="addComment">Add a comment</button>
+<button class="buttoncmd" href="https://trusting-curran-0186ea.netlify.app/posts/a-post-with-code-samples/" on-click="tweet" id="addComment">Add a comment</button>

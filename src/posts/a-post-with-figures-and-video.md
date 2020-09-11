@@ -26,4 +26,4 @@ Hopefully, this has demonstrated how simple it is to make a nice looking blog wi
 
 ## Comments
 
-<button class="button" href="https://trusting-curran-0186ea.netlify.app/posts/a-post-with-figures-and-video/" on-click="tweet" id="addComment">Add a comment</button>
+<button class="buttoncmd" href="https://trusting-curran-0186ea.netlify.app/posts/a-post-with-figures-and-video/" on-click="tweet" id="addComment">Add a comment</button>
