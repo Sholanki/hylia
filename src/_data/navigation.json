@@ -17,7 +17,7 @@
     },
 	{
       "text": "Posts",
-      "url": "/",
+      "url": "/post",
       "external": false
     }
   ]
