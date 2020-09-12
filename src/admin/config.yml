@@ -38,7 +38,7 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "posts"
     label: "Posts"
-    folder: "posts"
+    folder: "src/posts"
     slug: "{{slug}}"
     preview_path: "posts/{{slug}}"
     create: true
